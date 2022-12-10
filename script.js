@@ -45,7 +45,7 @@ function playerValidInput(s) {
     ) {
       test = false;
       return s.toLocaleLowerCase();
-    } else s = prompt("Your choice: Rock, Scissors or Paper!");
+    } else s = prompt("Enter valid choice: Rock, Scissors or Paper!");
   }
 }
 computerSelection = getComputerChoice(ar1);
