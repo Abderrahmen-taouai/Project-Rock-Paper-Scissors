@@ -5,6 +5,13 @@ const div = document.createElement("div");
 div.textContent="SCORE: ";
 const player = document.createElement("div");
 const cpu = document.createElement("div");
+const res = document.createElement("div");
+res.textContent="";
+res.style.background = 'purple';  
+res.style.width='400px';
+res.style.height='200px';
+
+
 
 
 const btn1 = document.createElement("button");
@@ -23,38 +30,14 @@ div.appendChild(btn2);
 div.appendChild(btn3);   
 div.appendChild(player); 
 div.appendChild(cpu); 
+div.appendChild(res); 
 let result="";
 let win = 0;
 let lose = 0;
 
 const buttons=document.querySelectorAll('button');
 
-buttons.forEach(btn=>{btn.addEventListener('click',function(e){
-if (win<5 && lose<5){
-  playRound(e);
-  if (
-    result == "You win! scissors beats paper" ||
-    result == "You win ! paper beats rock" ||
-    result == "You win! rock beats scissors"
-  )
-    {
-      console.log(win);
-    player.textContent=win;}
-  else if (
-    result == "You lose! rock beats scissors" ||
-    result == "You lose! paper beats rock" ||
-    result == "You lose! scissors beats paper "
-  )
-  {
-   console.log(lose); 
-  cpu.textContent=lose;}
-  
-}
-else (alert("Game is over"));
- 
-
-
-})
+buttons.forEach(btn=>{btn.addEventListener('click',play);
 
 
 
@@ -65,10 +48,30 @@ btn.style.padding='20px';
  } 
 
 );
-
-
-
-
+function play(e){
+if (win<5 && lose<5){
+  playRound(e);
+  if (
+    result == "You win! scissors beats paper" ||
+    result == "You win ! paper beats rock" ||
+    result == "You win! rock beats scissors"
+  )
+    {
+      res.textContent=result;
+    player.textContent=win;}
+  else if (
+    result == "You lose! rock beats scissors" ||
+    result == "You lose! paper beats rock" ||
+    result == "You lose! scissors beats paper "
+  )
+  {
+   res.textContent=result; 
+  cpu.textContent=lose;}
+  
+  else if (result== "Draw!") {res.textContent=result;}}
+ 
+ else {buttons.forEach(btn=>{btn.removeEventListener('click',play)});}
+}
 
 
 function getComputerChoice(arr) {
@@ -91,7 +94,7 @@ function playRound(e) {
   console.log(e.target.textContent.toLocaleLowerCase());
   const cs = computerSelection.toLowerCase();
   const playerselection=e.target.textContent.toLocaleLowerCase();
-  if (e.target.textContent.toLocaleLowerCase() == cs) {result= "Draw!";return result;}
+  breakme: if (playerselection == cs) {result= "Draw!";return result;break breakme;}
 
   switch (cs) {
     case "rock":
