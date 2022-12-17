@@ -1,0 +1,53 @@
+[33mcommit c12ef6859b0422ab291978d1f1f332b3554b633a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/rps-ui[m[33m, [m[1;32mrps-ui[m[33m)[m
+Author: Abdu <33095489+Tittou10@users.noreply.github.com>
+Date:   Sat Dec 17 15:34:23 2022 +0100
+
+    Style the Dom with Js
+
+[33mcommit 77a0e9459e82ca37c066ee0a0e7b6ee5e104f936[m
+Author: Abdu <33095489+Tittou10@users.noreply.github.com>
+Date:   Sat Dec 17 14:10:49 2022 +0100
+
+    Game working plus few css style within Js
+
+[33mcommit 0511c141e4415ece3bcd55e21f272728824a98fc[m
+Author: Abdu <33095489+Tittou10@users.noreply.github.com>
+Date:   Fri Dec 16 20:18:10 2022 +0100
+
+    Script is working
+
+[33mcommit e315f2e48d34afcc625ca5dbf195c3a1f2af9189[m
+Author: Abdu <33095489+Tittou10@users.noreply.github.com>
+Date:   Fri Dec 16 18:23:02 2022 +0100
+
+    Script is working
+
+[33mcommit a79531600ca4338bb7fb501a4d1b72d602a22054[m
+Author: Abdu <33095489+Tittou10@users.noreply.github.com>
+Date:   Sat Dec 10 16:03:12 2022 +0100
+
+    Game working in console
+
+[33mcommit fbd3fbca3e14438f0c37c2867211bd4554959ac9[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Abdu <33095489+Tittou10@users.noreply.github.com>
+Date:   Sat Dec 10 15:56:28 2022 +0100
+
+    Game working in cosole
+
+[33mcommit 4bdd6591f7d973f9ab8b09e801f0f307e5e5fc01[m
+Author: Abdu <33095489+Tittou10@users.noreply.github.com>
+Date:   Sat Dec 10 13:27:16 2022 +0100
+
+    Script for 1 turn game
+
+[33mcommit 5733061ee4d838305a9867d0f2abbdf65e36aa0f[m
+Author: Tittou10 <33095489+Tittou10@users.noreply.github.com>
+Date:   Sat Dec 10 12:22:33 2022 +0100
+
+    Update README.md
+
+[33mcommit 2e363e03fd6a4a7cde7386b25086b0387def5702[m
+Author: Tittou10 <33095489+Tittou10@users.noreply.github.com>
+Date:   Sat Dec 10 12:21:58 2022 +0100
+
+    Initial commit
